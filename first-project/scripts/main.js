@@ -1,2 +1,12 @@
-let myHeading = document.querySelector('h1');
-myHeading.textContent = "Hello World!";
+// let myHeading = document.querySelector('h1');
+// myHeading.textContent = "Hello World!";
+
+let myImage = document.querySelector('img');
+
+myImage.onclick = function() {
+    if(myImage.getAttribute('src') === 'images/gotdog.jpg') {
+        myImage.setAttribute('src', 'images/image2.jpg');
+    } else{
+        myImage.setAttribute('src', 'images/gotdog.jpg');
+    }
+}
